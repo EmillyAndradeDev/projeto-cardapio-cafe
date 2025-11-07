@@ -6,20 +6,34 @@
 ## Descrição
 O Poema Café é um projeto de cardápio online que combina a experiência de um café com a apreciação da poesia. Este site apresenta um cardápio interativo, permitindo que os usuários filtrem itens por categoria, como cafés, bolos, cookies, bebidas, etc.
 
+---
+
+## 🎨 Screenshot
+
+![Screenshot of Cardápio Poema Café](screenshot.jpeg) 
+
+---
+
 ## Funcionalidades
 - **Cardápio Interativo**: Os usuários podem visualizar diferentes categorias de itens do cardápio.
 - **Filtro de Itens**: Os itens podem ser filtrados por categoria (Todos, Cafés, Bolos, Sanduíches, Sucos).
 - **Design Responsivo**: O layout se adapta a diferentes tamanhos de tela, garantindo uma boa experiência em dispositivos móveis e desktops.
+
+---
 
 ## Tecnologias Utilizadas
 - **HTML**: Estrutura do site.
 - **CSS**: Estilização e layout responsivo.
 - **JavaScript**: Interatividade, incluindo o filtro de itens do cardápio.
 
+---
+
 ## Como Usar
 1. Clone o repositório:
    ```bash
    git clone https://github.com/emyaandrade/projeto-cardapio-cafe.git
+
+---
 
 
 # Documentação do Projeto
@@ -47,6 +61,13 @@ O Poema Café é um projeto de cardápio online que combina a experiência de um
 - **Filtro de Itens**: Quando um botão de filtro é clicado, o JavaScript remove a classe "active" de todos os botões e adiciona ao botão clicado. Em seguida, ele verifica a categoria do botão e exibe ou oculta os itens do cardápio com base nessa categoria.
 - **Responsividade**: O layout é projetado para se adaptar a diferentes tamanhos de tela, utilizando CSS Grid e Flexbox.
 
-### Conclusão
+---
 
 Este projeto é uma maneira de demonstrar minhas habilidades em HTML, CSS e JavaScript, além de ser uma aplicação prática que pode ser expandida com mais funcionalidades no futuro, como um sistema de pedidos online ou integração com redes sociais.
+
+---
+
+
+### 🌐 Veja o Projeto Online
+Você pode interagir com o cardápio diretamente pelo GitHub Pages:
+- [Cardápio Poema Café](https://emillyandradedev.github.io/projeto-cardapio-cafe/)
