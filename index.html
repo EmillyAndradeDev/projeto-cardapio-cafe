@@ -6,346 +6,59 @@
     <title>Cardápio | Poema Café</title>
     <meta name="author" content="Emilly Andrade">
     <meta name="description" content="Cardápio para o Poema Café">
-    <meta name="keywords" content="cardápio, café, poema café, cafeteria Jacareí, cafeteria SJC, cafeteria São José dos Campos">
+    <meta name="keywords"
+        content="cardápio, café, poema café, cafeteria Jacareí, cafeteria SJC, cafeteria São José dos Campos">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <h1>Poema - Café Bar</h1> 
-        <p>Café, Poesia e Drinks em um só lugar</p> 
+        <h1>Poema - Café Bar</h1>
+        <p>Café, Poesia e Drinks em um só lugar</p>
     </header>
-    
-    <section class="container"> 
-        <h2 class="section-title">Nosso Cardápio</h2> 
-        
-        <div class="filter-buttons"> 
+
+    <main class="container">
+        <h2 class="section-title">Nosso Cardápio</h2>
+
+        <nav class="filter-buttons">
             <button class="filter-btn active" data-category="todos">Todos</button>
             <button class="filter-btn" data-category="cafe">Cafés</button>
-            <button class="filter-btn" data-category="cha">Chás</button> 
-            <button class="filter-btn" data-category="bolo">Bolos</button> 
+            <button class="filter-btn" data-category="cha">Chás</button>
+            <button class="filter-btn" data-category="bolo">Bolos</button>
             <button class="filter-btn" data-category="cookie">Cookies</button>
             <button class="filter-btn" data-category="torta">Tortas</button>
             <button class="filter-btn" data-category="bebida">Bebidas</button>
-        </div>
-        
-        <div class="menu-container">
-            <div class="menu-item" data-category="cafe">
-                <div class="menu-img">
-                    <img src="img/cafe-coado.jpeg" alt="Xícara de café coado" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Café Coado</h3>
-                        <span class="menu-price">R$ 7,90</span> 
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Café coado na hora, preparado individualmente para garantir frescor e aroma em cada xícara.</p>
-                </div>
-            </div>
+        </nav>
 
-            <div class="menu-item" data-category="cafe">
-                <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7443cac1-0fab-4e8f-951f-f959cdf9123e.png" alt="Cappuccino escuro em xícara de porcelana com canela polvilhada" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Cappuccino</h3>
-                        <span class="menu-price">R$ 12,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Espresso com leite vaporizado e espuma de leite, finalizado com canela.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="cafe">
-                <div class="menu-img">
-                    <img src="img/cafe-especial.jpeg" alt="Café com especial em caneca grande com desenho na espuma, e um biscoito em formato de coração" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Café Especial</h3>
-                        <span class="menu-price">R$ 14,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Café especial com toque de chocolate e espuma cremosa, acompanhado de um delicado biscoito de coração.</p>
-                </div>
-            </div>
+        <div class="menu-container"></div>
+    </main>
 
-            <div class="menu-item" data-category="cafe">
-                <div class="menu-img">
-                    <img src="img/frappuccino.jpeg" alt="Bebida gelada à base de café com gelo e leite batidos e chantilly cremoso" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Frappuccino</h3>
-                        <span class="menu-price">R$ 22,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Bebida gelada à base de café com gelo e leite batidos e chantilly cremoso.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="cha">
-                <div class="menu-img">
-                    <img src="img/cha.jpeg" alt="Xícara chá" />
-                </div>
-                <div class="menu-content"> 
-                    <div class="menu-title">
-                        <h3>Chá do Poema</h3>
-                        <span class="menu-price">R$ 7,90</span>
-                    </div>
-                    <div class="divider"></div> 
-                    <p class="menu-desc">Infusão de frutas vermelhas, com sabor adocicado e aroma vibrante.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="bolo">
-                <div class="menu-img">
-                    <img src="img/brownie.jpeg" alt="Fatia de brownie" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Brownie</h3>
-                        <span class="menu-price">R$ 12,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Com uma casquinha crocante por fora e um interior macio. Nosso brownie é feito com o mais puro chocolate.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="bolo">
-                <div class="menu-img">
-                    <img src="img/bolo-de-cenoura.jpeg" alt="Bolo de cenoura com cobertura de chocolate" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Bolo de Cenoura</h3>
-                        <span class="menu-price">R$ 10,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Bolo de cenoura fofinho com cobertura de chocolate meio amargo.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="bolo">
-                <div class="menu-img">
-                    <img src="img/cheesecake.jpeg" alt="Cheesecake com cobertura de frutas vermelhas" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Cheesecake</h3>
-                        <span class="menu-price">R$ 12,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Feito com uma base crocante, um creme de queijo suave e aerado, e finalizado com uma deliciosa cobertura de frutas vermelhas.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="cookie">
-                <div class="menu-img">
-                    <img src="img/cookie-nutella.jpeg" alt="Cookie recheado de Nutella" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Cookie</h3>
-                        <span class="menu-price">R$ 15,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Um delicioso Cookie feito com massa de baunilha e recheado de Nutella.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="cookie">
-                <div class="menu-img">
-                    <img src="img/cookie-redvelvet.jpeg" alt="Cookie Red Velvet" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Red Velvet</h3>
-                        <span class="menu-price">R$ 15,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Uma delícia que combina a textura macia com o sabor sutil do chocolate e o toque vibrante do red velvet. Recheado com chocolate branco.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="cookie">
-                <div class="menu-img">
-                    <img src="img/cookies-trio-02.jpg" alt="Trio de Cookies: nutella, redvelvet e doce de leite" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Trio de Cookies</h3>
-                        <span class="menu-price">R$ 42,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Experimente o nosso Trio de Cookies Especiais - Doce de Leite, Red Velvet, Nutella.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="torta">
-                <div class="menu-img">
-                    <img src="img/torta-de-frango.jpeg" alt="Torta de frango" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Torta de Frango</h3>
-                        <span class="menu-price">R$ 10,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Um pedaço generoso da nossa torta salgada com massa macia, recheada com suculento frango desfiado temperado.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="torta">
-                <div class="menu-img">
-                    <img src="img/mini-torta-morango.jpeg" alt="Tortihas de morango" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Tortilha Doce</h3>
-                        <span class="menu-price">R$ 13,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Mini torta com base crocante, recheada com creme suave e coberta com morangos frescos.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="torta">
-                <div class="menu-img">
-                    <img src="img/mini-torta-cookie.jpeg" alt="Mini torta com base de cookie" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Torta de Cookie</h3>
-                        <span class="menu-price">R$ 16,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Mini torta com base de cookie, recheada generosamente com Nutella e pedaços de bolacha cookie.</p>
-                </div>
-            </div>
-            
-            <div class="menu-item" data-category="bebida">
-                <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a83a4d7-2eda-4c4c-885d-d19d7cfa0dd8.png" alt="Suco de laranja natural em jarra de vidro com fatias de laranja decorando" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Suco de Laranja</h3>
-                        <span class="menu-price">R$ 9,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Suco natural de laranja espremido na hora.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="bebida">
-                <div class="menu-img">
-                    <img src="img/cha-de-pinheirinho.jpg" alt="Chá de Pinheirinho" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Hard Tea</h3>
-                        <span class="menu-price">R$ 12,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">O primeiro Hard Tea (Chá Alcóolico)  do Brasil! Limão, ervas e um delicioso toque de gin, refrescância e sabor inesquecíveis.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="bebida">
-                <div class="menu-img">
-                    <img src="img/caipirinha.jpg" alt="Caaipirinha" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Caipirinha</h3>
-                        <span class="menu-price">R$ 26,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Sua caipirinha, do seu jeito! Escolha a base entre vodka, cachaça ou saquê, e combine com seu sabor favorito: limão, maracujá ou frutas vermelhas. Uma explosão de frescor e sabor.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="bebida">
-                <div class="menu-img">
-                    <img src="img/caipirinha-tres-limoes.jpg" alt="Caipirinha três limões" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Drink do Poema</h3>
-                        <span class="menu-price">R$ 28,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Caipirinha refrescante preparada com a cachaça de sua preferência, combinando limão siciliano, tahiti e cravo, adoçada no ponto certo.</p>
-                </div>
-            </div>
-
-            <div class="menu-item" data-category="bebida">
-                <div class="menu-img">
-                    <img src="img/gin-especiarias.jpg" alt="Gin com Especiarias como zimbro, pimenta rosa e rodelas de limão siciliano" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Gin</h3>
-                        <span class="menu-price">R$ 32,00</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Gin tônica clássica com especiarias selecionadas, como zimbro, pimenta rosa e rodelas de limão siciliano, para uma experiência aromática e sofisticada.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    
     <footer>
         <div class="footer-info">
-            <div class="footer-section"> 
+            <div class="footer-section">
                 <h3>Horário de Funcionamento</h3>
                 <p>Terça a Quinta: 14h - 20h</p>
                 <p>Sexta a Domingo: 15h - 23h</p>
             </div>
-            
-            <div class="footer-section">
+
+            <address class="footer-section">
                 <h3>Contato</h3>
                 <p>(12) 98876-8386</p>
                 <p>poemacafejac@gmail.com</p>
                 <p>Av. Andrômeda, 2840, Bosque dos Eucaliptos - São José dos Campos</p>
-            </div>
-            
-            <div class="footer-section"> 
+            </address>
+
+            <div class="footer-section">
                 <h3>Redes Sociais</h3>
                 <p>@poemacafebar</p>
             </div>
         </div>
-        
+
         <p>© 2025 Poema Café. Todos os direitos reservados.</p>
     </footer>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() { 
-            const filterBtns = document.querySelectorAll('.filter-btn'); 
-            const menuItems = document.querySelectorAll('.menu-item'); 
-            
-            filterBtns.forEach(btn => { 
-                btn.addEventListener('click', function() { 
-                    filterBtns.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active'); 
-                    
-                    const category = this.dataset.category; 
-                    
-                    menuItems.forEach(item => { 
-                        if (category === 'todos' || item.dataset.category === category) {
-                            item.style.display = 'block'; 
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-        });
-    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
-
