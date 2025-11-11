@@ -1,196 +1,196 @@
 :root {
-            --primary: #6F4E37; /* Cor primária */
-            --secondary: #C4A484; /* Cor secundária mais clara */
-            --light: #F5F5DC; /* Cor de fundo clara */
-            --dark: #3E2723; /* Cor de texto escura */
-            --accent: #D2B48C; /* Cor de destaque */
+            --primary: #6F4E37; 
+            --secondary: #C4A484; 
+            --light: #F5F5DC; 
+            --dark: #3E2723; 
+            --accent: #D2B48C; 
         }
         
         * {
-            margin: 0; /* Remove margens padrão */
-            padding: 0; /* Remove preenchimento padrão */
-            box-sizing: border-box; /* Inclui bordas e preenchimento no tamanho total */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte padrão */
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            background-color: var(--light); /* Cor de fundo do corpo */
-            color: var(--dark); /* Cor do texto */
-            line-height: 1.6; /* Altura da linha */
+            background-color: var(--light); 
+            color: var(--dark); 
+            line-height: 1.6; 
         }
         
         header {
             background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d6770de9-ab39-48fd-93ee-ab5f8728355a.png') center/cover; /* Imagem de fundo com gradiente */
-            height: 60vh; /* Altura do cabeçalho */
-            display: flex; /* Usando flexbox para centralizar conteúdo */
-            flex-direction: column; /* Direção da coluna */
-            justify-content: center; /* Centraliza verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
-            text-align: center; /* Centraliza texto */
-            color: white; /* Cor do texto no cabeçalho */
-            padding: 0 20px; /* Preenchimento lateral */
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d6770de9-ab39-48fd-93ee-ab5f8728355a.png') center/cover; 
+            height: 60vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+            color: white;
+            padding: 0 20px; 
         }
         
         header h1 {
-            font-size: 3.5rem; /* Tamanho da fonte do título */
-            margin-bottom: 20px; /* Margem inferior */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra do texto */
+            font-size: 3.5rem; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
         }
         
         header p {
-            font-size: 1.5rem; /* Tamanho da fonte do slogan */
-            max-width: 800px; /* Largura máxima do slogan */
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra do texto */
+            font-size: 1.5rem; 
+            max-width: 800px; 
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); 
         }
         
         .container {
-            max-width: 1200px; /* Largura máxima da seção do cardápio */
-            margin: 0 auto; /* Centraliza a seção */
-            padding: 40px 20px; /* Preenchimento */
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 40px 20px; 
         }
         
         .section-title {
-            text-align: center; /* Centraliza o título da seção */
-            margin-bottom: 40px; /* Margem inferior */
-            font-size: 2.5rem; /* Tamanho da fonte do título da seção */
-            color: var(--primary); /* Cor do título da seção */
-            position: relative; /* Para posicionar o pseudo-elemento */
+            text-align: center; 
+            margin-bottom: 40px; 
+            font-size: 2.5rem; 
+            color: var(--primary);
+            position: relative; 
         }
         
         .section-title::after {
-            content: ''; /* Cria um pseudo-elemento */
-            display: block;  /* Exibe como bloco */
-            width: 100px;  /* Largura do divisor */
-            height: 4px;  /* Altura do divisor */
-            background-color: var(--accent); /* Cor do divisor */
-            margin: 15px auto; /* Margem automática para centralizar */
+            content: ''; 
+            display: block; 
+            width: 100px;  
+            height: 4px;  
+            background-color: var(--accent); 
+            margin: 15px auto; 
         }
         
         .filter-buttons {
-            display: flex;  /* Usando flexbox para os botões de filtro */
-            justify-content: center; /* Centraliza os botões */
-            flex-wrap: wrap; /* Permite quebra de linha */
-            gap: 15px; /* Espaçamento entre os botões */
-            margin-bottom: 30px; /* Margem inferior */
+            display: flex;  
+            justify-content: center; 
+            flex-wrap: wrap;
+            gap: 15px; 
+            margin-bottom: 30px;
         }
         
         .filter-btn {
-            padding: 10px 25px; /* Preenchimento dos botões */
-            background-color: var(--secondary); /* Cor de fundo dos botões */
-            color: var(--dark); /* Cor do texto dos botões */
-            border: none; /* Remove borda */
-            border-radius: 30px; /* Bordas arredondadas */
-            font-size: 1.1rem; /* Tamanho da fonte dos botões */
-            cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-            transition: all 0.3s ease; /* Transição suave para efeitos */
+            padding: 10px 25px;
+            background-color: var(--secondary);
+            color: var(--dark); 
+            border: none; 
+            border-radius: 30px; 
+            font-size: 1.1rem; 
+            cursor: pointer; 
+            transition: all 0.3s ease; 
         }
         
         .filter-btn:hover, .filter-btn.active {
-            background-color: var(--primary); /* Cor de fundo ao passar o mouse ou ativo */
-            color: white; /* Cor do texto ao passar o mouse ou ativo */
+            background-color: var(--primary);
+            color: white;
         }
         
         .menu-container {
-            display: grid; /* Usando grid para os itens do cardápio */
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Colunas responsivas */
-            gap: 30px; /* Espaçamento entre os itens */
+            display: grid; 
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px; 
         }
         
         .menu-item {
-            background-color: white; /* Cor de fundo dos itens */
-            border-radius: 10px; /* Bordas arredondadas */
-            overflow: hidden; /* Esconde conteúdo que ultrapassa o limite */
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Sombra dos itens */
-            transition: transform 0.3s ease; /* Transição suave para efeito de hover */
+            background-color: white;
+            border-radius: 10px; 
+            overflow: hidden; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+            transition: transform 0.3s ease; 
         }
         
         .menu-item:hover {
-            transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+            transform: translateY(-10px); 
         }
         
         .menu-img {
-            height: 250px; /* Altura da imagem do item */
-            overflow: hidden; /* Esconde parte da imagem que ultrapassa */
+            height: 250px; 
+            overflow: hidden; 
         }
         
         .menu-img img {
-            width: 100%; /* Largura total da imagem */
-            height: 100%; /* Altura total da imagem */
-            object-fit: cover; /* Cobre o espaço disponível */
-            transition: transform 0.5s ease; /* Transição suave para efeito de zoom */
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.5s ease; 
         }
         
         .menu-item:hover .menu-img img {
-            transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+            transform: scale(1.1);
         }
         
         .menu-content {
-            padding: 25px; /* Preenchimento do conteúdo do item */
+            padding: 25px; 
         }
         
         .menu-title {
-            display: flex; /* Usando flexbox para título e preço */
-            justify-content: space-between; /* Espaço entre título e preço */
-            margin-bottom: 10px; /* Margem inferior */
-            font-size: 1.3rem; /* Tamanho da fonte do título */
-            color: var(--primary); /* Cor do título */
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+            font-size: 1.3rem; 
+            color: var(--primary); 
         }
         
         .menu-price {
-            color: var(--accent); /* Cor do preço */
-            font-weight: bold; /* Negrito para o preço */
+            color: var(--accent); 
+            font-weight: bold; 
         }
         
         .menu-desc {
-            color: #666; /* Cor da descrição */
-            margin-bottom: 15px; /* Margem inferior */
+            color: #666; 
+            margin-bottom: 15px; 
         }
         
         .divider {
-            width: 100px; /* Largura do divisor */
-            height: 1px; /* Altura do divisor */
-            background-color: #ddd; /* Cor do divisor */
-            margin: 20px 0; /* Margem vertical */
+            width: 100px; 
+            height: 1px; 
+            background-color: #ddd; 
+            margin: 20px 0; 
         }
         
         footer {
-            background-color: var(--dark); /* Cor de fundo do rodapé */
-            color: white; /* Cor do texto no rodapé */
-            text-align: center; /* Centraliza texto no rodapé */
-            padding: 30px 0; /* Preenchimento vertical */
-            margin-top: 50px; /* Margem superior */
+            background-color: var(--dark); 
+            color: white; 
+            text-align: center; 
+            padding: 30px 0; 
+            margin-top: 50px; 
         }
         
         .footer-info {
-            display: flex; /* Usando flexbox para as seções do rodapé */
-            justify-content: space-around; /* Espaço entre as seções */
-            flex-wrap: wrap; /* Permite quebra de linha */
-            max-width: 1200px; /* Largura máxima do rodapé */
-            margin: 0 auto 30px; /* Centraliza e margem inferior */
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            max-width: 1200px; 
+            margin: 0 auto 30px; 
         }
         
         .footer-section {
-            flex: 1; /* Cada seção ocupa espaço igual */
-            min-width: 300px; /* Largura mínima das seções */
-            margin: 20px; /* Margem entre seções */
+            flex: 1; 
+            min-width: 300px; 
+            margin: 20px; 
         }
         
         .footer-section h3 {
-            margin-bottom: 15px; /* Margem inferior do título da seção */
-            color: var(--secondary); /* Cor do título da seção */
+            margin-bottom: 15px;
+            color: var(--secondary);
         }
         
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.5rem; /* Tamanho da fonte do título em telas menores */
+                font-size: 2.5rem; 
             }
             
             header p {
-                font-size: 1.1rem; /* Tamanho da fonte do slogan em telas menores */
+                font-size: 1.1rem; 
             }
             
             .menu-container {
-                grid-template-columns: 1fr; /* Uma coluna em telas menores */
+                grid-template-columns: 1fr; 
             }
         }
